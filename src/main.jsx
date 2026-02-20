@@ -4,6 +4,8 @@ import { HashRouter, Routes, Route } from 'react-router-dom'
 import Home from './components/Home'
 import ReferralOptimizer from './visualizations/ReferralOptimizer'
 import ABConfidence from './visualizations/ABConfidence'
+import BinomialDistribution from './visualizations/BinomialDistribution'
+import Distributions from './visualizations/Distributions'
 
 // ============================================
 // ДОБАВЛЯЙ НОВЫЕ ВИЗУАЛИЗАЦИИ ТАК:
@@ -20,6 +22,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/" element={<Home />} />
         <Route path="/referral-optimizer" element={<ReferralOptimizer />} />
         <Route path="/ab-confidence" element={<ABConfidence />} />
+        <Route path="/binomial-distribution" element={<BinomialDistribution />} />
+        <Route path="/distributions" element={<Distributions />} />
       </Routes>
     </HashRouter>
   </React.StrictMode>

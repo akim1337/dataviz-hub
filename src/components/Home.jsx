@@ -19,6 +19,20 @@ const VISUALIZATIONS = [
     color: '#60a5fa',
     tags: ['statistics', 'ab-test'],
   },
+  {
+    path: '/binomial-distribution',
+    title: 'Биномиальное распределение',
+    description: 'PMF, CDF, мат. ожидание, дисперсия — интерактивный калькулятор B(n, p)',
+    color: '#a78bfa',
+    tags: ['statistics', 'probability'],
+  },
+  {
+    path: '/distributions',
+    title: 'Distribution Explorer',
+    description: '10 распределений — теория, эмпирика, μ/Me/Mo, sampling distribution + CI',
+    color: '#e8c547',
+    tags: ['statistics', 'probability', 'distributions'],
+  },
 ]
 
 export default function Home() {
