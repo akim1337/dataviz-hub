@@ -6,6 +6,7 @@ import ReferralOptimizer from './visualizations/ReferralOptimizer'
 import ABConfidence from './visualizations/ABConfidence'
 import BinomialDistribution from './visualizations/BinomialDistribution'
 import Distributions from './visualizations/Distributions'
+import BoxplotExplorer from './visualizations/boxplot-explorer'
 
 // ============================================
 // ДОБАВЛЯЙ НОВЫЕ ВИЗУАЛИЗАЦИИ ТАК:
@@ -24,6 +25,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/ab-confidence" element={<ABConfidence />} />
         <Route path="/binomial-distribution" element={<BinomialDistribution />} />
         <Route path="/distributions" element={<Distributions />} />
+        <Route path="/boxplot-explorer" element={<BoxplotExplorer />} />
       </Routes>
     </HashRouter>
   </React.StrictMode>

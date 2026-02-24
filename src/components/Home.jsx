@@ -33,6 +33,13 @@ const VISUALIZATIONS = [
     color: '#e8c547',
     tags: ['statistics', 'probability', 'distributions'],
   },
+  {
+    path: '/boxplot-explorer',
+    title: 'Boxplot Explorer',
+    description: 'Интерактивный боксплот — сравнение распределений, выбросы, квартили',
+    color: '#f472b6',
+    tags: ['statistics', 'distributions', 'visualization'],
+  },
 ]
 
 export default function Home() {
