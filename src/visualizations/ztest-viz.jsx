@@ -214,7 +214,7 @@ export default function ZTestViz() {
 
   const Sld = ({ id, label, value, onChange, min, max, step, display, color = C.yellow, disabled }) => (
     <div className="sld-wrap" style={{ position: "relative", opacity: disabled ? 0.2 : 1, pointerEvents: disabled ? "none" : "auto" }}>
-      <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 4 }}>
+      <div className="sld-label" style={{ display: "flex", justifyContent: "space-between", marginBottom: 4 }}>
         <span style={{ fontSize: 10, color: C.dim, textTransform: "uppercase", letterSpacing: "0.08em" }}>{label}</span>
         <span style={{ fontSize: 13, fontWeight: 700, color }}>{display}</span>
       </div>
@@ -252,7 +252,7 @@ export default function ZTestViz() {
 
   return (
     <div style={{ fontFamily: "'JetBrains Mono', 'Fira Code', monospace", background: C.bg, color: C.text, minHeight: "100vh", padding: "12px" }}>
-      <style>{`@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap');input[type=range]{height:4px}*{box-sizing:border-box}.sld-wrap:hover .sld-tip{opacity:1}.sld-tip{opacity:0;pointer-events:none;transition:opacity 0.15s}`}</style>
+      <style>{`@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap');input[type=range]{height:4px}*{box-sizing:border-box}.sld-label:hover~.sld-tip{opacity:1}.sld-tip{opacity:0;pointer-events:none;transition:opacity 0.15s}.sld-label{cursor:default}`}</style>
       <div style={{ maxWidth: 1100, margin: "0 auto" }}>
 
         {/* ═══ Header ═══ */}
