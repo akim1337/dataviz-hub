@@ -40,6 +40,13 @@ const VISUALIZATIONS = [
     color: '#f472b6',
     tags: ['statistics', 'distributions', 'visualization'],
   },
+  {
+    path: '/ztest-viz',
+    title: 'Z-Test Explorer',
+    description: 'Power, α/β ошибки, доверительные интервалы, sensitivity tornado — Z-тест с ползунками',
+    color: '#f5c542',
+    tags: ['statistics', 'ab-test', 'hypothesis-testing'],
+  },
 ]
 
 export default function Home() {

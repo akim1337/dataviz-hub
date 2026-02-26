@@ -7,6 +7,7 @@ import ABConfidence from './visualizations/ABConfidence'
 import BinomialDistribution from './visualizations/BinomialDistribution'
 import Distributions from './visualizations/Distributions'
 import BoxplotExplorer from './visualizations/boxplot-explorer'
+import ZTestViz from './visualizations/ztest-viz'
 
 // ============================================
 // ДОБАВЛЯЙ НОВЫЕ ВИЗУАЛИЗАЦИИ ТАК:
@@ -26,6 +27,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/binomial-distribution" element={<BinomialDistribution />} />
         <Route path="/distributions" element={<Distributions />} />
         <Route path="/boxplot-explorer" element={<BoxplotExplorer />} />
+        <Route path="/ztest-viz" element={<ZTestViz />} />
       </Routes>
     </HashRouter>
   </React.StrictMode>
